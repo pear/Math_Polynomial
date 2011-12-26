@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE package SYSTEM "http://pear.php.net/dtd/package-1.0">
+<package version="1.0">
+  <name>Math_Polynomial</name>
+  <summary>Package to represent and manipulate Polynomial equations</summary>
+  <description>The class Math_Polynomial represents Polynomial equations built from strings 
+or from other Polynomial objects and offers some basic information about each 
+Polynomial equation.
+  
+The Math_PolynomialOp class defines operations on Math_Polynomial objects such 
+as add, multiply, divide, etc.</description>
+  <maintainers>
+    <maintainer>
+      <user>superwormy</user>
+      <name>Keith Palmer Jr.</name>
+      <email>keith@UglySlug.com</email>
+      <role>lead</role>
+    </maintainer>
+  </maintainers>
+  <release>
+    <version>0.1.0</version>
+    <date>2006-03-15</date>
+    <license>BSD</license>
+    <state>beta</state>
+    <notes>* Fixed the (string) casting and &quot;double quotes&quot; in Polynomial.php (Justin Patrin)
+* Added secant methods: PolynomialOp::getSecantSlopeAt(), PolynomialOp::getSecantAt(), PolynomialOp::createSecantFunction()
+* Fixed a bug involving terms with 0 coefficients
+* Added method: PolynomialOp::getAntiDerivative()
+* Added behavior related methods: PolynomialOp::isEven(), PolynomialOp::isOdd(), PolynomialOp::getEndBehavior()</notes>
+    <deps>
+      <dep type="pkg" rel="ge" version="0.3.0" optional="yes">Math_Numerical_RootFinding</dep>
+    </deps>
+    <filelist>
+      <file role="php" baseinstalldir="Math" md5sum="a9e2931a660c7f9bb24e5a8c82f11f32" name="Polynomial.php"/>
+      <file role="php" baseinstalldir="Math" md5sum="81a97279d56b68d4b6fbbd8a5bf8dc6d" name="PolynomialOp.php"/>
+      <file role="php" baseinstalldir="Math" md5sum="3249dd1434dc738f5972da063294009d" name="doc/Polynomial_examples.php"/>
+      <file role="php" baseinstalldir="Math" md5sum="08e6605fe2a13bb7c035bcdd3388f58c" name="test/PolynomialTest.php"/>
+      <file role="php" baseinstalldir="Math" md5sum="d1d54745a25c3df3667d402cb3874c49" name="Polynomial/PolynomialTerm.php"/>
+    </filelist>
+  </release>
+  <changelog>
+    <release>
+      <version>0.1.0</version>
+      <date>2006-03-15</date>
+      <license>BSD</license>
+      <state>beta</state>
+      <notes>* Fixed the (string) casting and &quot;double quotes&quot; in Polynomial.php (Justin Patrin)
+* Added secant methods: PolynomialOp::getSecantSlopeAt(), PolynomialOp::getSecantAt(), PolynomialOp::createSecantFunction()
+* Fixed a bug involving terms with 0 coefficients
+* Added method: PolynomialOp::getAntiDerivative()
+* Added behavior related methods: PolynomialOp::isEven(), PolynomialOp::isOdd(), PolynomialOp::getEndBehavior()
+</notes>
+    </release>
+    <release>
+      <version>0.0.2</version>
+      <date>2005-12-18</date>
+      <license>BSD</license>
+      <state>alpha</state>
+      <notes>* Proposal for PEAR package.
+</notes>
+    </release>
+  </changelog>
+</package>
