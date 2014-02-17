@@ -1,0 +1,28 @@
+{
+    "authors": [
+        {
+            "email": "keith@UglySlug.com",
+            "name": "Keith Palmer Jr.",
+            "role": "Lead"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Math_Polynomial": "./"
+        }
+    },
+    "description": "More info available on: http://pear.php.net/package/Math_Polynomial",
+    "include-path": [
+        "./"
+    ],
+    "license": "BSD",
+    "name": "pear/math_polynomial",
+    "support": {
+        "issues": "http:///bugs/search.php?cmd=display&package_name[]=Math_Polynomial",
+        "source": "https://github.com/pear/Math_Polynomial"
+    },
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+}
